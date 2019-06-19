@@ -1,0 +1,62 @@
+{
+	"name": "halfscroll",
+	"displayName": "HalfScroll",
+	"publisher": "dNk",
+	"description": "Scroll your editor half.That's all.",
+	"version": "1.0.0",
+	"bugs": {
+        "url": "https://github.com/d-Nk/HalfScroll/issues"
+    },
+  	"repository": {
+    	"type": "git",
+    	"url": "https://github.com/d-Nk/HalfScroll.git"
+	},
+	"engines": {
+		"vscode": "^1.35.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "extension.halfUp",
+				"title": "Scroll Half Up"
+			},
+			{
+				"command": "extension.halfDown",
+				"title": "Scroll Half Down"
+			}
+		],
+		"keybindings": [
+			{
+			  "command": "extension.halfUp",
+			  "key": "ctrl+shift+up",
+			  "when": "editorFocus"
+			},
+			{
+			  "command": "extension.halfDown",
+			  "key": "ctrl+shift+down",
+			  "when": "editorFocus"
+			}
+		]	
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"postinstall": "node ./node_modules/vscode/bin/install",
+		"test": "npm run compile && node ./node_modules/vscode/bin/test"
+	},
+	"devDependencies": {
+		"typescript": "^3.3.1",
+		"vscode": "^1.1.28",
+		"tslint": "^5.12.1",
+		"@types/node": "^10.12.21",
+		"@types/mocha": "^2.2.42"
+	}
+}
