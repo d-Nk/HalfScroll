@@ -3,13 +3,13 @@
 	"displayName": "HalfScroll",
 	"publisher": "dNk",
 	"description": "Scroll your editor half. That's all.",
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"bugs": {
-        "url": "https://github.com/d-Nk/HalfScroll/issues"
-    },
-  	"repository": {
-    	"type": "git",
-    	"url": "https://github.com/d-Nk/HalfScroll.git"
+		"url": "https://github.com/d-Nk/HalfScroll/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/d-Nk/HalfScroll.git"
 	},
 	"engines": {
 		"vscode": "^1.35.0"
@@ -34,16 +34,16 @@
 		],
 		"keybindings": [
 			{
-			  "command": "extension.halfUp",
-			  "key": "ctrl+shift+up",
-			  "when": "editorFocus"
+				"command": "extension.halfUp",
+				"key": "ctrl+shift+up",
+				"when": "editorFocus"
 			},
 			{
-			  "command": "extension.halfDown",
-			  "key": "ctrl+shift+down",
-			  "when": "editorFocus"
+				"command": "extension.halfDown",
+				"key": "ctrl+shift+down",
+				"when": "editorFocus"
 			}
-		]	
+		]
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
