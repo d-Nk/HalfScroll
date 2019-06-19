@@ -13,6 +13,9 @@ If you feel inconvinence, please change the key settings.
 
 ## Release Notes
 
+### 1.0.1
+Fix the issue that warning message shown if using the minus line.
+
 ### 1.0.0
 
 First release.

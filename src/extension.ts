@@ -39,12 +39,16 @@ function SetNewActive(top : boolean) : boolean
 	const nowRange = range[0].end.line - range[0].start.line;
 	const halfRange = Math.round(nowRange / 2);
 
-	const newLine = top? nowLine - halfRange : nowLine + halfRange;
+	let newLine = top? nowLine - halfRange : nowLine + halfRange;
+	if(newLine <= 0)
+	{
+		newLine = 0;
+	}
 	const newSelectPos = new vscode.Position(newLine, 0);
 
 	editor.selection = new vscode.Selection(newSelectPos, newSelectPos);
 	editor.revealRange(new vscode.Range(newSelectPos, newSelectPos), 
-	vscode.TextEditorRevealType.InCenter);
+		vscode.TextEditorRevealType.InCenter);
 	return true;
 }
 

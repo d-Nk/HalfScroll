@@ -2,8 +2,8 @@
 	"name": "halfscroll",
 	"displayName": "HalfScroll",
 	"publisher": "dNk",
-	"description": "Scroll your editor half.That's all.",
-	"version": "1.0.0",
+	"description": "Scroll your editor half. That's all.",
+	"version": "1.0.1",
 	"bugs": {
         "url": "https://github.com/d-Nk/HalfScroll/issues"
     },
