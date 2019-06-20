@@ -44,6 +44,10 @@ function SetNewActive(top : boolean) : boolean
 	{
 		newLine = 0;
 	}
+	else if(editor.document.lineCount < newLine)
+	{
+		newLine = editor.document.lineCount;
+	}
 	const newSelectPos = new vscode.Position(newLine, 0);
 
 	editor.selection = new vscode.Selection(newSelectPos, newSelectPos);
